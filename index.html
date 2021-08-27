@@ -7,81 +7,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
-    <header><h2>The Green Trees Initiative</h2></header>
-    <h2>Give hope to those who need it most</h2>
-    <form action="" method="get">
+    <header>
+        <h2>The Green</h2>
+        <h2>Trees Initiative</h2>
+    </header>
+    <div class="image">
+        <h2 class="head">Give hope to those who need it most</h2>
+        <div class="container">
+            <form action="" method="get">
 
-        <h3>Your Information</h3>
+                <h2>Your Information</h2>
 
-        <p>FIRST NAME <input type="text" name="fname" id="fname" placeholder="First name"></p>
+                <p>FIRST NAME <input type="text" name="fname" id="fname" placeholder="First name"></p>
 
-        <p>LAST NAME <input type="text" name="lname" id="lname" placeholder="Last name"></p>
+                <p>LAST NAME <input type="text" name="lname" id="lname" placeholder="Last name"></p>
 
-        <p>STREET ADDRESS <input type="text" name="address" id="address" placeholder="Street address"></p>
+                <p>STREET ADDRESS <input type="text" name="address" id="address" placeholder="Street address"></p>
 
-        <p>CITY <input type="text" name="city" id="city" placeholder="City"></p>
+                <p>CITY <input type="text" name="city" id="city" placeholder="City"></p>
 
-        <p>STATE <select name="state" id="state">
-                <option value="AN">AN</option>
-                <option value="AP">AP</option>
-                <option value="AR">AR</option>
-                <option value="AS">AS</option>
-                <option value="BR">BR</option>
-                <option value="CH">CH</option>
-                <option value="CT">CT</option>
-                <option value="DN">DN</option>
-                <option value="DD">DD</option>
-                <option value="DL">DL</option>
-                <option value="GA">GA</option>
-                <option value="GG">GG</option>
-                <option value="HR">HR</option>
-                <option value="HP">HP</option>
-                <option value="JK">JK</option>
-                <option value="KA">KA</option>
-                <option value="KL">KL</option>
-                <option value="LD">LD</option>
-                <option value="MP">MP</option>
-                <option value="MH">MH</option>
-                <option value="MN">MN</option>
-                <option value="ML">ML</option>
-                <option value="MZ">MZ</option>
-                <option value="NL">NL</option>
-                <option value="OR">OR</option>
-                <option value="PY">PY</option>
-                <option value="PB">PB</option>
-                <option value="RJ">RJ</option>
-                <option value="SK">SK</option>
-                <option value="TN">TN</option>
-                <option value="TG">TG</option>
-                <option value="TR">TR</option>
-                <option value="UP">UP</option>
-                <option value="UT">UT</option>
-                <option value="WB">WB</option>
-            </select></p>
+                <p>STATE <select name="state" id="state">
+                        <option value="AN">AN</option>
+                        <option value="AP">AP</option>
+                        <option value="AR">AR</option>
+                        <option value="AS">AS</option>
+                        <option value="BR">BR</option>
+                        <option value="CH">CH</option>
+                        <option value="CT">CT</option>
+                        <option value="DN">DN</option>
+                        <option value="DD">DD</option>
+                        <option value="DL">DL</option>
+                        <option value="GA">GA</option>
+                        <option value="GG">GG</option>
+                        <option value="HR">HR</option>
+                        <option value="HP">HP</option>
+                        <option value="JK">JK</option>
+                        <option value="KA">KA</option>
+                        <option value="KL">KL</option>
+                        <option value="LD">LD</option>
+                        <option value="MP">MP</option>
+                        <option value="MH">MH</option>
+                        <option value="MN">MN</option>
+                        <option value="ML">ML</option>
+                        <option value="MZ">MZ</option>
+                        <option value="NL">NL</option>
+                        <option value="OR">OR</option>
+                        <option value="PY">PY</option>
+                        <option value="PB">PB</option>
+                        <option value="RJ">RJ</option>
+                        <option value="SK">SK</option>
+                        <option value="TN">TN</option>
+                        <option value="TG">TG</option>
+                        <option value="TR">TR</option>
+                        <option value="UP">UP</option>
+                        <option value="UT">UT</option>
+                        <option value="WB">WB</option>
+                    </select></p>
 
-        <p>ZIP CODE <input type="number" name="zipcode" id="zipcode" placeholder="Zip"></p>
+                <p>ZIP CODE <input type="number" name="zipcode" id="zipcode" placeholder="Zip"></p>
 
-        <p>EMAIL ADDRESS <input type="email" name="email" id="email" placeholder="Email address"></p>
+                <p>EMAIL ADDRESS <input type="email" name="email" id="email" placeholder="Email address"></p>
 
 
-        <h2>Payment Information</h2>
+                <h2>Payment Information</h2>
 
-        <p>CREDIT CARD NUMBER <input type="number" name="card_no" id="card_no" placeholder="Credit card number"></p>
+                <p>CREDIT CARD NUMBER <input type="number" name="card_no" id="card_no" placeholder="Credit card number"></p>
 
-        <p>EXPIRATION DATE <input type="month" name="month" id="month" placeholder="MM"> <input type="number"
-                name="year" id="year" placeholder="YYYY"></p>
+                <p>EXPIRATION DATE <input type="month" name="month" id="month" placeholder="MM"></p>
 
-        <p>SECURITY CODE <input type="password" name="cvc" id="cvc" placeholder="CVC"></p>
+                <p>SECURITY CODE <input type="password" name="cvc" id="cvc" placeholder="CVC"></p>
 
-        <p>Click the button to confirm your donation of $10, recurring monthly.</p>
+                <p>Click the button to confirm your donation of $10, recurring monthly.</p>
 
-        <input type="submit" value="Process Payment">
+                <input type="submit" value="Process Payment">
 
-        <a href="">go back</a>
-    </form>
+                <a href="">go back</a>
+            </form>
+        </div>
+    </div>
     <footer>
         <p>The Green Trees Initiative</p>
         
