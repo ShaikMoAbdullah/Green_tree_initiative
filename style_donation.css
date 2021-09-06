@@ -1,0 +1,646 @@
+/* Global */
+@import url("https://p.typekit.net/p.css?s=1&k=wvl2kgf&ht=tk&f=18085&a=84797321&app=typekit&e=css");
+
+@font-face {
+  font-family: "flood-std";
+  src: url("https://use.typekit.net/af/6da923/000000000000000000012fc3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/6da923/000000000000000000012fc3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/6da923/000000000000000000012fc3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  color: #354463;
+  text-align: center;
+}
+
+.intro p {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 100px;
+  }
+
+  .intro p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 120px;
+  }
+
+  .intro p {
+    font-size: 28px;
+    text-align: justify;
+  }
+}
+
+
+
+section {
+  display: flex;
+  background-image: url(Assets/assets/donation/annie-spratt-427340-unsplash.png);
+  background-position: 54%;
+  height: 985px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-color: rgb(102, 137, 153);
+}
+
+form input[type="text"] {
+  color: #ffffff;
+}
+
+.quote {
+  height: 79px;
+  width: 312px;
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.quote p {
+  font-family: "flood-std";
+  color: white;
+  font-size: 32px;
+}
+
+.form {
+  height: 830px;
+  width: 312px;
+  background-color: #354463;
+  color: #ffffff;
+}
+
+.form h3 {
+  color: white;
+  margin: 31px 0px 25px 31px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.form form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px 20px;
+  margin: 0px 9%;
+}
+
+.text-field {
+  border-bottom: 2px solid #c1f7d5;
+}
+
+div #first {
+  grid-column: 1/3;
+}
+
+div #last {
+  grid-column: 3/6;
+}
+
+div #street {
+  grid-column: 1/6;
+}
+
+div #city {
+  grid-column: 1/3;
+}
+
+div #state {
+  grid-column: 3;
+}
+
+div #zip {
+  grid-column: 4/6;
+}
+
+div #email {
+  grid-column: 1/6;
+}
+
+div #credit {
+  grid-column: 1/6;
+}
+
+div #expiry {
+  grid-column: 1;
+}
+
+div #date {
+  grid-column: 2/4;
+}
+
+div #sec {
+  grid-column: 4;
+}
+
+.text-field p {
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.text-field input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.text-field select {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #c1f7d5;
+  border: none;
+  font-weight: lighter;
+  background-color: transparent;
+}
+
+select option {
+  color: #354463;
+  background-color: transparent;
+}
+
+.form #expiry p {
+  font-size: 15px;
+}
+
+.form #expiry input {
+  margin-top: 14px;
+}
+
+.form #date p {
+  font-size: 15px;
+}
+
+.form #date input {
+  margin-top: 14px;
+}
+
+.extra-info {
+  width: 73%;
+  height: 60px;
+  margin-top: 31px;
+  margin-left: 31px;
+  float: left;
+}
+
+.extra-info p {
+  font-size: 17px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #c1f7d5;
+  margin: 40% 9%;
+  width: 75%;
+  height: 5%;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.button button[type="button"] {
+  border: none;
+  background: transparent;
+  position: relative;
+  top: 11px;
+  left: 50px;
+  font-family: Helvetica, sans-serif;
+  color: #354463;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.go-back {
+  position: relative;
+  color: #c1f7d5;
+  text-decoration: 1px underline;
+  font-family: Helvetica, sans-serif;
+  top: -100px;
+  left: 10%;
+  font-size: 16px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  section {
+    height: 1255px;
+    background-repeat: no-repeat;
+  }
+
+  .quote {
+    height: 104px;
+    width: 512px;
+  }
+
+  .quote p {
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center;
+    font-family: Flood-std;
+  }
+
+  .form {
+    height: 1016px;
+    width: 640px;
+  }
+
+  .form h3 {
+    margin: 50px 0px 25px 55px;
+    font-size: 28px;
+  }
+
+  .text-field p {
+    font-size: 15px;
+  }
+
+  .text-field input {
+    height: 55px;
+  }
+
+  input::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+
+  .text-field select {
+    margin-top: 16px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c1f7d5;
+    border: none;
+    font-weight: lighter;
+    background-color: transparent;
+  }
+
+  .form #expiry p {
+    font-size: 17px;
+  }
+
+  .form #expiry input {
+    margin-top: 15px;
+  }
+
+  .form #date p {
+    font-size: 17px;
+  }
+
+  .form #date input {
+    margin-top: 15px;
+  }
+
+  .extra-info {
+    width: 83%;
+    margin-top: 48px;
+    margin-left: 55px;
+  }
+
+  .extra-info p {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .button {
+    margin: 25% 54%;
+    width: 38%;
+    height: 5%;
+  }
+  .button button[type="button"] {
+    top: 12px;
+    left: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .go-back {
+    top: -192px;
+    left: 9%;
+    font-size: 16px;
+  }
+} 
+
+@media screen and (min-width: 1025px) {
+  section {
+    height: 1224px;
+    background: transparent url("Assets/assets/donation/annie-spratt-427340-unsplash.png");
+    background-size: cover;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    background-color: rgb(102, 137, 153);
+    align-items: center;
+    background-position: 57%;
+    width: 1440px;
+    height: 1224px;
+  }
+
+  .quote {
+    width: 384px;
+    height: 362px;
+    margin: -675px 0px 0px 0px;
+  }
+
+  .quote p {
+    font-size: 72px;
+    text-align: left;
+    font-family: Flood-std;
+    line-height: 70px;
+  }
+
+  .form {
+    height: 1016px;
+    width: 640px;
+  }
+
+  .form h3 {
+    margin: 58px 300px 25px 55px;
+    font: normal normal bold 28px/36px Helvetica;
+  }
+
+  .text-field p {
+    font-size: 17px;
+  }
+
+  input::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+
+  .text-field select {
+    margin-top: 9px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c1f7d5;
+    border: none;
+    font-weight: lighter;
+    background-color: transparent;
+  }
+
+  .form #expiry p {
+    font-size: 17px;
+  }
+  .form #date p {
+    font-size: 17px;
+  }
+
+  .form #expiry input {
+    margin-top: 20px;
+  }
+
+  .form #date input {
+    margin-top: 20px;
+  }
+
+  .extra-info {
+    margin-top: 57px;
+    margin-left: 64px;
+  }
+
+  .extra-info p {
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .button {
+    margin: 32% 48%;
+    width: 38%;
+    height: 5%;
+  }
+
+  .button button[type="button"] {
+    top: 13px;
+    left: 30px;
+    font-size: 22px;
+  }
+
+  .go-back {
+    top: -250px;
+    left: 64px;
+    font: normal normal 300 16px/56px Helvetica;  
+  }
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-self: center;
+  grid-gap: 2em 2em;
+  margin: 67px 32px;
+}
+
+.introduction {
+  width: 94px;
+  height: 62px;
+  color: #354463;
+}
+
+.introduction > p {
+  font: normal normal bold 18px/22px Helvetica;
+}
+
+.contact-us {
+  width: 140px;
+  height: 120px;
+  color: #354463;
+}
+
+.p1 {
+  font-size: 11px;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+}
+.p2 {
+  font-size: 14px;
+  margin-top: 5px;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.follow-us {
+  width: 120px;
+  height: 120px;
+  color: #354463;
+  grid-row: 2/4;
+}
+
+.f1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.list {
+  width: 115px;
+  height: 110px;
+  position: relative;
+  left: -3px;
+  margin-top: 5px;
+  color: #354463;
+}
+
+.list > p {
+  padding: 3px;
+  font-size: 14px;
+  font-weight: lighter;
+  text-decoration: 0.3px underline;
+  font-family: Helvetica, sans-serif;
+}
+
+.learn-more {
+  width: 140px;
+  height: 120px;
+  color: #354463;
+}
+
+.hashtag-quote {
+  top: 1473px;
+  left: 164px;
+  width: 181px;
+  height: 136px;
+}
+
+.hashtag-quote p {
+  text-align: right;
+  font: normal normal normal 44px/46px Flood-std;
+  letter-spacing: 0px;
+  color: #354463;
+  opacity: 1;
+} 
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  .article {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em, 9em;
+    margin: 64px 70px;
+  }
+
+  .introduction {
+    grid-row: 1/3;
+    width: 126px;
+  }
+
+  .p2 {
+    line-height: 20px;
+  }
+
+  #contact {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  #follow {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  #learn {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .hashtag-quote {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hashtag-quote p {
+    font-size: 44px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .article {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    margin: 70px 160px;
+  }
+
+  .introduction {
+    grid-column: 1;
+    top: 1456px;
+    left: 160px;
+    width: 170px;
+    height: 81px;
+
+  }
+
+  .introduction > p {
+    font: normal normal bold 22px/28px Helvetica;
+  }
+
+  .contact-us {
+    grid-column: 2;
+  }
+
+  .p1 {
+    font: normal normal normal 14px/17px Helvetica;
+    border-bottom: 1px solid black;
+  }
+  .p2 {
+    font: normal normal 300 14px/20px Helvetica;
+    text-align: left;
+  }
+
+  .follow-us {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .f1 {
+    font: normal normal normal 14px/17px Helvetica;
+    border-bottom: 1px solid black;
+  }
+
+  .list > p {
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  .learn-more {
+    grid-column: 3;
+    font: normal normal normal 14px/17px Helvetica;
+  }
+
+  .hashtag-quote {
+    grid-column: 5;
+  }
+
+  .hashtag-quote p {
+    text-align: right;
+    font: normal normal normal 44px/46px Flood-std;
+  }
+}
